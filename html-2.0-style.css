@@ -1,41 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   box-sizing: border-box;
-  background-color: #232323;
-  color: #e0e0e0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #141414;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   /* text-align: left é o padrão; */
   /* usar text-align justify pra quando houver muita informação */
   /* border-box subtrai o padding, já o content-box soma o padding mais o conteúdo */
 }
-h1 {
-  margin: 8px;
+h1,
+h2,
+h3,
+h4 {
+  margin-left: 25px;
 }
 p {
-  margin: 10px;
+  margin-left: 25px;
   line-height: 25px;
 }
 table {
+  margin-left: 25px;
+  margin-top: 50px;
   width: 600px;
 }
-th,
-thead td {
+table thead tr th {
   color: white;
-  background-color: slategray;
-  border: 2px solid #c6cad2;
-  padding: 10px;
-  text-align: left;
+  background-color: rgb(71, 81, 92);
   border-radius: 4px;
+  padding: 10px;
 }
-tbody td {
-  color: white;
 
+tbody tr td {
+  color: white;
   background-color: lightslategray;
   padding: 10px;
   border: 3px solid slategray;
   border-radius: 4px;
 }
+/* table tbody tr td:nth-child(even) {
+  background-color: black;
+} */
 tbody tr :hover {
   background-color: rgb(170, 185, 199);
+  cursor: pointer;
+}
+
+form {
+  margin-left: 25px;
 }
