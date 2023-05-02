@@ -4,7 +4,7 @@
   background-color: #ffffff;
   color: #141414;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   /* text-align: left é o padrão; */
   /* usar text-align justify pra quando houver muita informação */
   /* border-box subtrai o padding, já o content-box soma o padding mais o conteúdo */
@@ -48,4 +48,19 @@ tbody tr :hover {
 
 form {
   margin-left: 25px;
+}
+label {
+  display: block;
+  margin-top: -5px;
+}
+.Descricao {
+  padding: 10px;
+  width: 500px;
+}
+input {
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 1px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
