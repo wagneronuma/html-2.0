@@ -127,6 +127,51 @@
         <a href="paginadetermosquenaoexiste" target="_blank">termos de uso</a>
       </label>
     </form>
+    <br />
+    <form
+      action="./paginaquenaoexiste"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for=""
+          >Primeiro nome: <br />
+          <input type="text" name="name" required />
+        </label>
+        <label for=""
+          >Sobrenome: <br />
+          <input type="text" name="lastname" required />
+        </label>
+        <label for=""
+          >Idade: <br />
+          <input type="text" name="age" required min="18" max="120" />
+        </label>
+        <label for=""
+          >Data de nascimente: <br />
+          <input type="date" name="birthdate" required min="18" max="120" />
+        </label>
+        <label for=""
+          >Foto: <br />
+          <input type="file" name="photo" required accept="image/*" />
+          <!-- accept="application/pdf para escolher somente pdfs -->
+        </label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Dados da profissionais</legend>
+        <label for=""
+          >Nome da empresa: <br />
+          <input type="text" name="companyname" />
+        </label>
+        <label for=""
+          >Cargo: <br />
+          <input type="text" name="companyjobtitle" />
+        </label>
+      </fieldset>
+      <input type="submit" value="cadastrar" />
+    </form>
 
     <!-- <input type="text" name="" id="" />
     <input type="checkbox" />

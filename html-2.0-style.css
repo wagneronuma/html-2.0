@@ -57,10 +57,42 @@ label {
   padding: 10px;
   width: 500px;
 }
-input {
+input,
+[type="textarea"],
+[type="text"] {
   border: 1px solid #ccc;
   outline: 0;
-  border-radius: 1px;
-  margin-bottom: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
   margin-top: 10px;
+}
+textarea {
+  height: 200px;
+  resize: none;
+  border-radius: 6px;
+  outline: 0;
+}
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #949494;
+  background-color: #eee;
+}
+button:hover {
+  background-color: #ddd;
+  border: 1px solid #949494;
+}
+fieldset,
+fieldset label {
+  background-color: #eee;
+  border-radius: 6px;
+}
+fieldset label {
+  padding: 5px;
+}
+legend {
+  border-radius: 6px;
+  /* background-color: #eee; */
+  border: 1px solid #ccc;
+  padding: 5px;
 }
